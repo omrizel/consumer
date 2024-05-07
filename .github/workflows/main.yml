@@ -2,7 +2,13 @@ name: Caller Workflow
 on:
   workflow_dispatch:
 jobs:
-  build:
+  release:
     uses: omrizel/test-actions/.github/workflows/reusable-workflow.yml@main
     with:
       testvar: byeeee
+  custom_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run custom from consumer
+        run: |
+          echo "Run custom from consumer"
