@@ -7,6 +7,7 @@ jobs:
     with:
       testvar: byeeee
   custom_job:
+    needs: [ release ]
     runs-on: ubuntu-latest
     steps:
       - name: Run custom from consumer
