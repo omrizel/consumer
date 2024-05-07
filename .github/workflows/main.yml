@@ -1,4 +1,4 @@
-ame: Caller Workflow
+name: Caller Workflow
 on:
   workflow_dispatch:
 jobs:
