@@ -1,4 +1,4 @@
-name: Caller Workflow
+name: Caller Workflow 2
 on:
   workflow_dispatch:
 jobs:
